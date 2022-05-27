@@ -4,15 +4,16 @@ $(document).ready(function () {
 
   $inputForm.on("keyup", function () {
     const lengthOfInput = $(this).val().length;
-    valueOfInput = this.value;
 
-    $counter = $(".counter");
+    let $counter = $(".counter");
 
-    if (lengthOfInput < 140) {
-      $counter.css("color", "#545149");
+    if (lengthOfInput > 140) {
+      $counter.css("color", "#FF0000");
+      console.log("test");
       $counter.text(charactersRemaining - lengthOfInput);
     } else {
-      $counter.css("color", "#FF0000");
+      $counter.css("color", "#545149");
+      console.log("test2");
       $counter.text(charactersRemaining - lengthOfInput);
     }
   });

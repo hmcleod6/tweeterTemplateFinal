@@ -3,10 +3,13 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
-html {
+ html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -14,12 +17,13 @@ html {
  * Global layout stuff
  */
 
+
 body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
-  display:flex; 
+  display: flex;
   flex-direction: column;
 }
 
@@ -31,5 +35,26 @@ main {
 }
 
 /*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+* Additional CSS can be defined below or in other CSS files, as per instructions
+*/
+
+
+@media screen and (min-width: 1024px) {
+  main.container {
+    display: flex;
+    float: right;
+    width: 60%;
+    padding-top: 100px;
+    ;
+  }
+
+  section.header {
+    width: 30%;
+    margin-top: 10em;
+    margin-right: 3em;
+    margin-bottom: 3em;
+    margin-left: 3em;
+    float: left;
+  }
+
+}

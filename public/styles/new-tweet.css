@@ -3,42 +3,48 @@ main.container {
   display: flex;
   align-items: stretch;
   flex-direction: column;
-  }
-  button.submitButton {
-    font-family: 'Bungee';
-    background-color: #4056A1;
-    color: whitesmoke;
-  }
-  output.counter {
-    font-family: "Bungee";
-  }
-  #tweet-text {
-    background-color: transparent;
-    outline: none;
-    border-color: transparent;
-    border-bottom: 3px solid;
-    resize: none;
-    margin-bottom: 10px;
-  }
-  
-  .tweetButtonAndCounter {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .promptAndTextBox {
-    display: flex;
-    flex-direction: column;
-  }
-  .error {
-    display: flex;
-    flex-direction: row;
-    color: hotpink;
-    min-height: 1rem;
-  }
-  
-  p#errorMessage {
-    margin: .75em;
-    display: flex;
-    align-items: center;
-  }
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+button.submitButton {
+  font-family: 'Bungee';
+  background-color: #4056A1;
+  color: whitesmoke;
+}
+
+output.counter {
+  font-family: "Bungee";
+}
+
+#tweet-text {
+  background-color: transparent;
+  outline: none;
+  border-color: transparent;
+  border-bottom: 3px solid;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+.tweetButtonAndCounter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promptAndTextBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.error {
+  display: flex;
+  flex-direction: row;
+  color: hotpink;
+  min-height: 1rem;
+}
+
+p#errorMessage {
+  margin: .75em;
+  display: flex;
+  align-items: center;
+}

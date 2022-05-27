@@ -16,18 +16,18 @@ $(() => {
     <div class="hardcodedTweet">     
       <header class="tweetPerson">
         <div class = "nameAndPic">
-        <img class="tinyPic" src=${escape(data.user.avatar)}/>
-        <p>${escape(data.user.name)}</p>
+            <img class="tinyPic" src=${escape(data.user.avatars)}/>
+            <p>${escape(data.user.name)}</p>
         </div>
         <p>${escape(data.user.handle)}</p>
     </header>
     <div class="content">
-    <p>${escape(data.content.text)}</p>
+        <p>${escape(data.content.text)}</p>
    </div>
     <footer class="footerClass">
     <div class="timeAgo">
     <p>${timeago.format(escape(data.created_at))}</p>
-  </div> 
+  </div>
        <div class="icons">
        <div class="icon1 icon">
        <p><i class="fa-solid fa-flag"></i></p>
@@ -77,11 +77,10 @@ $(() => {
       `;
 
       if (!$(".error").is(":empty")) {
-        $(".error").html(markup);
+        return $(".error").html(markup);
       }
-      $(markup).appendTo($(".error")).hide().slideDown();
+      $(markup).appendTo($(".error")).slideDown();
     };
-
     if (!characterLength) {
       const emptyField = "The text field is empty. Please enter a tweet.";
       showError(emptyField);
@@ -95,7 +94,7 @@ $(() => {
       $(".counter").html("140");
 
       $(".error").slideUp(200, () => {
-        $(".error").empty().show();
+        $(".error").remove().show();
       });
 
       $.ajax({
