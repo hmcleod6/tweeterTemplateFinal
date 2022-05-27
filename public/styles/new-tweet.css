@@ -1,0 +1,87 @@
+main.container {
+  margin-top: 10px;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  }
+  button.submitButton {
+    font-family: 'Bungee';
+    background-color: #4056A1;
+    color: whitesmoke;
+  }
+  output.counter {
+    font-family: "Bungee";
+  }
+  #tweet-text {
+    background-color: transparent;
+    outline: none;
+    border-color: transparent;
+    border-bottom: 3px solid;
+    resize: none;
+    margin-bottom: 10px;
+  }
+  
+  .tweetButtonAndCounter {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .promptAndTextBox {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  article {
+      height: 150px;
+      color:  #383838d0;
+      padding-left: 1.5em;
+      padding-right: 1.5em;
+      padding-top: .5em;
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+     border-style: solid;
+     border-color: #383838d0;
+     border-width: medium;
+  }
+  article.tweet {
+    display: flex;
+    flex-direction: column;
+  }
+  article.tweet:hover {
+    box-shadow: 10px 5px 5px hotpink; 
+  }
+  
+  header1 {
+    display: flex;
+    align-self: flex-start
+  }
+  
+  footer {
+    display: flex;
+    align-self: flex-end;
+    font-size: 15px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    width: 100%;
+  }
+  div.footerClass {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  p {
+    width: 100%;
+    border-bottom: solid;
+    border-color:#383838d0; 
+    border-width: medium;
+  }
+  div.icons {
+    display: flex;
+    justify-content: space-between;
+  }
+  div.icons:hover {
+    color: hotpink;
+  } 
