@@ -2,7 +2,7 @@ $(document).ready(function () {
   const $inputForm = $("#tweet-text");
   let charactersRemaining = 140;
 
-  $inputForm.on("keyup", function (event) {
+  $inputForm.on("keyup", function () {
     const lengthOfInput = $(this).val().length;
     valueOfInput = this.value;
 
