@@ -94,7 +94,7 @@ $(() => {
       $(".counter").html("140");
 
       $(".error").slideUp(200, () => {
-        $(".error").remove().show();
+        $(".error").hide().show();
       });
 
       $.ajax({

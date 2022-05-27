@@ -41,13 +41,14 @@ main {
 
     section.header {
       display: flex;
-      margin-left: 50px;
-      margin-top: 50px;;
       width: 70%;
-
     }
     div.headerAndTweets {
       display: flex;
+    }
+
+    section.mainbody {
+      margin-top: 1px;
     }
   
   }
