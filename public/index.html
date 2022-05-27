@@ -17,9 +17,16 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css"/>
     <link rel="stylesheet" href="/styles/header.css" type="text/css"/>
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+       <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
+
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
   </head>
@@ -28,7 +35,8 @@
     <nav>
       <span>tweeter</span>
       <div class= "Write-a-new-tweet"><span class= "new-tweet-text"><strong>Write</strong> a new tweet</span>
-      <i class="fa-solid fa-angles-down"></i> </div>
+        <div class="doubleArrow"><i class="fa-solid fa-angles-down"></i> </div>
+      </div>
     </nav>
     <header>
       <div>
@@ -43,17 +51,26 @@
   </header>
 
     <!-- Page-specific (main) content here -->
-    <main class="container"></main>
     <main class="container"><section class="new-tweet">
-      <h2>Compose Tweet</h2>
-      <form>
-        <label for="tweet-text">What are you humming about?</label>
+      <form action="/tweets" method="POST" header="Content-Type: application/x-www-form-urlencoded">
+        <div class="promptAndTextBox">
+        <label for="tweet-text"><strong>What are you humming about?</strong></label>
         <textarea name="text" id="tweet-text"></textarea>
-        <div>
-          <button type="submit">Tweet</button>
+      </div>
+
+      <div class="tweetButtonAndCounter">
+        <button class="submitButton" type="submit" value="submit">Tweet</button>
           <output name="counter" class="counter" for="tweet-text">140</output>
         </div>
       </form>
+    </section>
+    <article class="tweet">
+<header1>Jane Doe</header1>
+<p>hello add tweet here and bottom border</p>
+
+<footer><div class="footerClass"><span class="daysAgo">10 days ago</span> <div class="icons"><i class="fa-solid fa-flag"></i><i class="fa-solid fa-retweet"></i><i class="fa-solid fa-heart"></i></div>
+</footer>
+</article>
     </section></main>
   </body>
 </html>
