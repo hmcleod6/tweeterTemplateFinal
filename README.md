@@ -1,18 +1,13 @@
 # Tweeter Project
 
-Tweeter is a simple, single-page Twitter clone.
-
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express back-end skills.
-
-## Getting Started
-
-1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.
-2. Clone your repository onto your local device.
-3. Install dependencies using the `npm install` command.
-3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
-4. Go to <http://localhost:8080/> in your browser.
+Tweeter is a simple, single-page Twitter clone; a Single Page App (SPA) built with HTML, CSS, JS, jQuery and AJAX.
 
 ## Dependencies
 
 - Express
 - Node 5.10.x or above
+
+## Screenshots
+
+!["Screenshot of Error 1 - Empty tweet field"](https://github.com/hmcleod6/tweeterTemplateFinal/blob/master/docs/Error%201%20-%20Tweeter%20Screenshot.png?raw=true)
+!["Screenshot of Error 2 - Exceeded tweet limit"](https://github.com/hmcleod6/tweeterTemplateFinal/blob/master/docs/Error%202%20Desktop%20-%20Exceeded%20maximum%20character%20limit.png?raw=true)
