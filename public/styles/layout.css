@@ -17,7 +17,6 @@
  * Global layout stuff
  */
 
-
 body {
   color: #545149;
   background-color: #f4f1ec;
@@ -38,23 +37,17 @@ main {
 * Additional CSS can be defined below or in other CSS files, as per instructions
 */
 
+  @media only screen and (min-width: 1024px) {
 
-@media screen and (min-width: 1024px) {
-  main.container {
-    display: flex;
-    float: right;
-    width: 60%;
-    padding-top: 100px;
-    ;
+    section.header {
+      display: flex;
+      margin-left: 50px;
+      margin-top: 50px;;
+      width: 70%;
+
+    }
+    div.headerAndTweets {
+      display: flex;
+    }
+  
   }
-
-  section.header {
-    width: 30%;
-    margin-top: 10em;
-    margin-right: 3em;
-    margin-bottom: 3em;
-    margin-left: 3em;
-    float: left;
-  }
-
-}

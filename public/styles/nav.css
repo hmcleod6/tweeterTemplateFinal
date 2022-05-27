@@ -3,14 +3,12 @@ nav.bar {
   width: 100%;
   background-color: #4056A1;
   color: #FFFFFF;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  padding: 1.5em;
   display: flex;
   align-items: center;
   font-family: 'Bungee';
   justify-content: space-between;
-  flex-direction: row;
-  position: fixed;
+  position: sticky;
 }
 
 nav.bar {
