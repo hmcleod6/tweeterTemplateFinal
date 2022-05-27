@@ -1,11 +1,12 @@
-header {
+section.header {
   height: 400px;
   width: 100%;
   color: #FFFFFF;
-  z-index: 2;
+  z-index: 1;
+  margin-top: 120px;
   display: flex;
   flex-direction: column;
-  background-color: #ff99f3;
+  background-color: hotpink;
 background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
 } 
 
@@ -22,3 +23,7 @@ span.name {
   justify-content: center;
   color: white;
 } 
+
+span.firstName {
+  font-weight: bold;
+}

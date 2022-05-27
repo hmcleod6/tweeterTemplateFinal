@@ -9,7 +9,9 @@ nav {
   align-items: center;
   font-family: 'Bungee';
   justify-content: space-between;
-  z-index: 2;
+  top: 0;
+z-index: 2;
+position: fixed;
 }
 
 .new-tweet-text  {
