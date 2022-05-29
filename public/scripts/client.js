@@ -59,7 +59,7 @@ $(() => {
       url: "/tweets",
       method: "GET",
     }).then((tweets) => {
-      $(".tweetcontainer").empty();
+      $(".tweetContainer").empty();
       renderTweets(tweets);
     });
   };
@@ -102,6 +102,7 @@ $(() => {
         url: "/tweets",
         data: data,
       }).then(() => {
+
         loadNewTweets();
       });
     }
